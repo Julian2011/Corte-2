@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rick And Morty</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/logo.png" alt="Logo">
+    </div>
+    <button class="menu-toggle">&#9776;</button>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Acerca de</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="filter">
+      <!-- Agrega un elemento select con las opciones de los nombres de las cartas -->
+      <label for="select-card">Selecciona una carta:</label>
+      <select id="select-card">
+        <option value="">Todas las cartas</option>
+      </select>
+    </div>
+  </main>
+
+  <div class="card-container">
+    <!-- las cards se generan aquí a través de JavaScript -->
+  </div>
+
+  <script src="script.js"></script>
+
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Contacto</h4>
+        <p>Teléfono: 555-1234</p>
+        <p>Email: info@ejemplo.com</p>
+        <p>Dirección: Calle Falsa 123, Ciudad</p>
+      </div>
+      <div class="footer-column">
+        <h4>Redes Sociales</h4>
+        <ul class="social-icons">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Acerca de Nosotros</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pretium elit a augue interdum, vel iaculis
+          justo sodales.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+
+</html>
