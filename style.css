@@ -1,4 +1,7 @@
 /*navbar*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 header {
     display: flex;
     justify-content: space-between;
@@ -19,10 +22,12 @@ header {
     list-style: none;
     margin: 0;
     padding: 0;
+    
   }
   
   nav li {
     margin: 0 10px;
+    
   }
   
   nav a {
@@ -36,17 +41,31 @@ header {
     transition: all 0.3s ease-in-out;
   }
   
-  .menu-toggle {
-    display: none;
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    font-size: 20px;
-    cursor: pointer;
+  .menuCompleto{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+  .icon-menu{
+    width: 50px;
+    height: 50px;
     position: absolute;
-    top: 20px;
     right: 20px;
-  }
+    top: 16px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #eeeeeefa;
+    border-radius: 100%;
+    color: #787878;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+   
+}
+#check{
+  display: none;
+}
   
   @media (max-width: 768px) {
     header {
@@ -59,26 +78,59 @@ header {
     }
   
     nav {
-      display: none;
+      display: block;
       width: 100%;
     }
+    
   
-    .menu-toggle {
-      display: block;
-    }
-  
-    .show-menu nav {
-      display: block;
-    }
-  
-    nav ul {
-      flex-direction: column;
-    }
-  
-    nav li {
-      margin: 10px 0;
-    }
+    .icon-menu{
+      display: flex;
+      z-index: 60;
+      margin-right: 30px;
   }
+  
+  .menuCompleto{
+  
+    width: 60%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    z-index: 50;
+    left: -100%;
+    background-color:#555;
+    box-shadow: 10px 0  20px -25px black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    align-items: center;
+    transition: all .5s;
+    
+ }
+
+  #check:checked ~ .menuCompleto{
+    left: 0;
+  }
+  .nav-lista{
+    display: flex;
+    columns: 1;
+    flex-direction: column;
+    margin: 2px 2px;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    z-index: 90;
+    display: block;
+    margin-top: 40px;
+    
+ }
+ .nav-lista li{
+  margin-top: 30px;
+  font-size: 30px;
+ }
+  
+} 
 
   /* filtro */
   .filter{
@@ -118,6 +170,14 @@ header {
     box-shadow: 0 0 5px #0077cc;
   }
   /* cartas */
+
+
+
+
+
+
+
+  
   body {
     background-color: #f5f5f5;
   }
@@ -166,6 +226,9 @@ header {
       text-align: left;
     }
   
+    .card-container{
+      margin-top: 40px;
+    }
     .card {
       width: 80%;
       margin: 0 auto;
@@ -223,9 +286,10 @@ header {
   .fa:hover {
     color: #ccc;
   }
-  
+
+
   @media (max-width: 768px) {
     .footer-column {
       width: 100%;
     }
-  }
+  } 
