@@ -6,7 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rick And Morty</title>
+  <script src="https://kit.fontawesome.com/c8c9463c4f.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
@@ -14,21 +17,29 @@
     <div class="logo">
       <img src="img/logo.png" alt="Logo">
     </div>
-    <button class="menu-toggle">&#9776;</button>
-    <nav>
-      <ul>
+   
+    
+    <input type="checkbox" id="check">
+     <label for="check" class="icon-menu">
+       <i class="fa-solid fa-bars"></i>
+       
+    </label>
+    <div class="menuCompleto">
+     <nav>
+      <ul class="nav-lista">
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Acerca de</a></li>
         <li><a href="#">Servicios</a></li>
         <li><a href="#">Contacto</a></li>
       </ul>
     </nav>
+  </div>
   </header>
 
   <main>
     <div class="filter">
       <!-- Agrega un elemento select con las opciones de los nombres de las cartas -->
-      <label for="select-card">Selecciona una carta:</label>
+      <label for="select-card">Selecciona una carta: </label>
       <select id="select-card">
         <option value="">Todas las cartas</option>
       </select>
